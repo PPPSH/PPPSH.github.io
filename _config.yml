@@ -106,7 +106,7 @@ analytics:
 author:
   name             : "pppsh"
   avatar           : # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
-  bio              : "데이터 엔지니어링 개발노트"
+  bio              : "데이터 엔지니어링 개발노트입니다"
   location         : "South Korea"
   email            :
   links:
