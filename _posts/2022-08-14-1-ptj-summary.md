@@ -1,6 +1,6 @@
 ---
 layout: single
-title: "1. 파일럿 프로젝트 개요"
+title: "#1. pjt-파일럿 프로젝트 개요"
 categories: hadoop-pjt
 tag: [hadoop,pjt]
 toc: true 
@@ -39,7 +39,7 @@ sidebar:
 
 프로젝트에 큰 개요는 강의 설명에 나와 있는 아래 그림으로 대체 
 
-
+**해당 프로젝트에서는 실시간 , 배치성 데이터의 파이프라인 구축 실습에 의미가 있음**
 
 ![](../../images/2022-08-14-1-ptj-summary/pjt_img.PNG)
 
@@ -51,7 +51,7 @@ sidebar:
 
 ### **수집** :  로그 Generator 활용 data 생성,  Realtime(실시간), Batch data(일1회) 생성, 수집 
 
-- 플럼(Flume), 카프카(Kafka), 스톰(Storm) & 에스퍼(Esper)
++ 플럼(Flume), 카프카(Kafka), 스톰(Storm) & 에스퍼(Esper)
 
 ### **적재** :  배치 데이터는 하둡, 실시간 데이터는 HBase, Redis
 

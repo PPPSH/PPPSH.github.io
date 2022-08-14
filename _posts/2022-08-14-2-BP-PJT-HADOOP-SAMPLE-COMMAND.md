@@ -1,0 +1,64 @@
+---
+layout: single
+title: "#2. pjt-하둡 기본 명령어 사용"
+categories: hadoop-pjt
+tag: [hadoop, pjt, hdfs]
+toc: true 
+author_profile: false
+sidebar:
+    nav: "docs"
+
+
+---
+
+# 하둡 HDSF 기본 명령어 실습
+
+<br>
+
+* **기본 흐름**
+  1. 파일질라(FileZilla) 통해 예제 파일 하둡 DataNode 서버에 업로드 (server02)
+  2. 위 업로드 된 파일을 hdfs에 put 명령어를 통해 저장
+  3. 저장된 파일 핸들링 
+
+```bash
+$ cd /home/bigdata #파일질라를 통해 업로드된 파일에 저장 경로 
+$ hdfs dfs -put Sample.txt /tmp # 업로드 된 Sample.txt파일을 하둡 /tmp 경로에 업로드
+$ hdfs dfs -ls /tmp # hdfs에 저장한 파일을 확인
+$ hdfs dfs -cat /tmp/Sample.txt # hdfs에 저장한 파일 내용 보기 
+```
+
+<br>
+
+
+
+* **기타 명령어**
+  1. hdfs 저장한 파일 상태 확인
+  2. hdfs 파일 시스템 상태 검사 
+  3. hdfs 저장 파일을 로컬파일 시스템으로 가져오기  
+  4. hdfs 저장 파일 삭제 
+
+```bash
+$ hdfs dfs -stat '%b %o %r %u %n' /tmp/Sample.txt # 파일크기 %b, 블록개수 %o 복제 수 %r, 소유자명%u, 파일명%n
+$ hdfs fsck / 
+$ hdfs dfs -get /tmp/Sample.txt # hdfs가 설치되어 있는 server로 가져오기 
+$ hdfs dfs -rm /tmp/Sample.txt
+```
+
+<br>
+
+* 비정상 상태 
+
+  1. 안전 모드 상태로 전환됐다면 강제로 안전 모드를 해제
+
+  2. 손상된 파일을 삭제
+
+  3. 손상된 파일을 /lost + found 디렉토리로 이동
+
+```bash
+$ hdfs dfsadmin -safemode leave
+$ hdfs fsck / -delete 
+$ hdfs fsck / -move 
+```
+
+
+
