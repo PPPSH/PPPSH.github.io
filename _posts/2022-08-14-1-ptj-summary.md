@@ -37,5 +37,5 @@ sidebar:
 
 
 
-![](../images/2022-08-14-1-ptj-summary/pjt_개요.PNG)
+![](../images/2022-08-14-1-ptj-summary/pjt_img.PNG)
 
