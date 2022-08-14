@@ -17,9 +17,13 @@ sidebar:
 
 
 
-인프런에서 유익하게 들었던 강의 기간이 끝나가면서 복습 차원에서 블로그로 정리하고자 함 . 
+인프런에서 유익하게 들었던 강의 기간이 끝나가면서 복습 차원에서 블로그로 정리하고자 함 .
+
+![inf_img](../../images/2022-08-14-1-ptj-summary/inf_img.PNG)
 
 > https://www.inflearn.com/course/%EB%B9%85%EB%8D%B0%EC%9D%B4%ED%84%B0-%ED%8C%8C%EC%9D%BC%EB%9F%BF-%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8
+
+(이미지에 링크 타는건 나중에 수정예정) 
 
 <br>
 
@@ -37,5 +41,27 @@ sidebar:
 
 
 
-![](../images/2022-08-14-1-ptj-summary/pjt_img.PNG)
+![](../../images/2022-08-14-1-ptj-summary/pjt_img.PNG)
+
+<br>
+
+# 소프트웨어 아키텍처
+
+![아키구성](../../images/2022-08-14-1-ptj-summary/아키구성.PNG)
+
+### **수집** :  로그 Generator 활용 data 생성,  Realtime(실시간), Batch data(일1회) 생성, 수집 
+
+- 플럼(Flume), 카프카(Kafka), 스톰(Storm) & 에스퍼(Esper)
+
+### **적재** :  배치 데이터는 하둡, 실시간 데이터는 HBase, Redis
+
+- 하둡(Hadoop), Hbase, Redis
+
+### **처리/탐색** :  Hue를 활용한 GUI  환경 /  우지, 스쿱 등을 활용해서 데이터 이관작업, 스케쥴링 / Hive,Spark 탐색
+
+- 하이브(Hive), 스파크(Spark), 우지(Oozie), 스쿱(Sqoop), 휴(Hue)
+
+### **분석/응용** : 
+
+
 
