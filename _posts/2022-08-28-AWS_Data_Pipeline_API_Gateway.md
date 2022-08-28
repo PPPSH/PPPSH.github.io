@@ -15,7 +15,7 @@ sidebar:
 
 사용 서비스 : EC2, API Gateway , Kinesis Streams, Kinesis Firehose  , S3
 
-![aws_arc](../../images/2022-08-28-AWS_Data_Pipeline_수집구조/aws_arc.png)
+![aws_arc](../../images/2022-08-28-AWS_Data_Pipeline_API_Gateway/aws_arc.png)
 
 ### 1.  API Gateway
    외부 소스에서 AWS에 접근하는 Point, RESTFul API를 받아주는곳 
@@ -38,8 +38,7 @@ sidebar:
 ---
 
 ## 1. API Gateway 설정
-
-![api_gateway_0828](../../images/2022-08-28-AWS_Data_Pipeline_수집구조/api_gateway_0828-1677013.png)
+![api_gateway_0828](../../images/2022-08-28-AWS_Data_Pipeline_API_Gateway/api_gateway_0828-1693068.png)
 
 1. 외부 소스로 부터 Restful API를 통해 호출 될것
 
